@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../styles/input.css" />
+    <link rel="stylesheet" href="../styles/output.css" />
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="../script/main.js"></script>
+
+    <title>Chat</title>
+  </head>
+  <body>
+    <div class="flex h-screen items-center justify-center bg-slate-950">
+      <div
+        class="rounded-lg relative bg-blue-50 p-8 shadow-lg"
+        style="width: 80%"
+      >
+        <div>
+          <div
+            class="mb-2 cursor-pointer absolute w-8 h-7 right-3 top-3 rounded-full flex items-center justify-center"
+          >
+            <a href="/"><img class="w-5" src="/icons/exit.svg" /></a>
+          </div>
+
+          <div
+            class="h-[22rem] overflow-y-scroll scrollbar-hide"
+            id="messagesContainer"
+          ></div>
+        </div>
+        <div class="mt-4 flex justify-between">
+          <input
+            type="text"
+            class="w-full mr-2 border border-blue-950 py-2 px-3 leading-tight focus:outline-none focus:bg-white focus:border-blue-900"
+            placeholder="Type a message..."
+            id="input-msg"
+          />
+
+          <button
+            class="bg-blue-950 hover:bg-blue-900 text-blue-50 py-2 px-4"
+            id="sendButton"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

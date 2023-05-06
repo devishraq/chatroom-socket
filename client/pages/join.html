@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/input.css" />
+    <link rel="stylesheet" href="../styles/output.css" />
+    <script defer src="/script/main.js"></script>
+    <title>Chatroom-tishraq28</title>
+  </head>
+  <body>
+    <div class="bg-slate-950 flex items-center justify-center h-screen">
+      <div class="bg-blue-50 w-90 h-80 rounded-lg shadow-lg p-8 rainbow">
+        <h1 class="text-2xl mb-6">
+          <span class="border-b-2 border-blue-950 pb-1">Join Chatroom</span>
+        </h1>
+        <p class="text-base mb-1 text-blue-950">Username</p>
+        <div class="mb-6">
+          <input
+            type="text"
+            class="w-full border border-blue-950 py-2 px-3 leading-tight focus:outline-none focus:bg-white focus:border-blue-900 mb-4"
+            name="username"
+            id="input-join"
+          />
+          <a href="/chatroom">
+            <button
+              class="bg-blue-950 hover:bg-blue-900 text-white py-2 px-4"
+              id="join-btn"
+            >
+              Join
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="absolute bottom-2 w-full h-9 flex justify-center items-center text-blue-300"
+    >
+      This project is built and maintained by
+      <span class="text-yellow-300"> &nbsp;@tishraq28</span>
+    </div>
+  </body>
+</html>

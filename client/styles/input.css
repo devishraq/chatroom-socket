@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 0.1em;
+}
+::-webkit-scrollbar-track {
+  color: rgb(38, 38, 38);
+  opacity: 60%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.message {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-down {
+  animation: scroll 0.3s ease forwards;
+}
