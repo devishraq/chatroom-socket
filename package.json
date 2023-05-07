@@ -1,0 +1,12 @@
+{
+  "name": "chatroom",
+  "version": "1.0.0",
+  "description": "A simple real time communication chat application",
+  "main": "server/main.js",
+  "scripts": {
+    "start": "node server/main.js"
+  },
+  "keywords": [],
+  "author": "Ishraq Tanvir",
+  "license": "ISC"
+}

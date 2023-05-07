@@ -5,10 +5,10 @@ const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
 const router = require('./router');
+const users = {};
 io.setMaxListeners(2000);
 app.use(express.static('client'));
 app.use('/', router);
-const users = {};
 io.on('connection', socket => {
     socket.on('new-user-joined', name => {
         console.log('New user: ', name);
