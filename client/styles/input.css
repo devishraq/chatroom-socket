@@ -38,5 +38,5 @@ body {
 }
 
 .scroll-down {
-  animation: scroll 0.3s ease forwards;
+  animation: scroll 0.3s ease-in-out;
 }
